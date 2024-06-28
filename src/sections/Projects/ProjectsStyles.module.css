@@ -27,6 +27,10 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    p{
+      color: #0987F2;
+      font-weight: bolder;
+    }
   }
   
   @media (width >= 800px) {

@@ -69,12 +69,16 @@
   
   .description {
     max-width: 24ch;
+    font-weight: 500;
   }
   
   .info {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    h2{
+      color: #0987F2;
+    }
   }
   
   @media (width >= 800px) {
