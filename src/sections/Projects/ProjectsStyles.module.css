@@ -4,7 +4,9 @@
     text-align: center;
   
     img {
-      max-width: 250px;
+      width: 300px; /* Fixed width */
+      height: 250px; /* Fixed height */
+      object-fit: contain;
       align-self: center;
       background-color: var(--project-card-bg);
       border-radius: 20px;
@@ -33,7 +35,7 @@
     }
   }
   
-  @media (width >= 800px) {
+  @media (min-width: 800px) {
     .projectsContainer {
       flex-direction: row;
       flex-wrap: wrap;
