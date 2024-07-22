@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: #0987F2;
   
     span {
       display: flex;
@@ -30,8 +31,25 @@
     background-color: var(--text-color);
     margin: 30px auto;
   }
+
+  @media (min-width: 300px) and (max-width: 799px) {
+    .skillList {
+      max-width: fit-content;
+      gap: 20px; 
   
-  @media (width >= 800px) {
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #0987F2;
+      }
+    }
+  
+    hr {
+      width: 150px; 
+    }
+  }
+  
+  @media (min-width: 800px) {
     .skillList {
       max-width: fit-content;
       gap: 30px;
@@ -47,3 +65,4 @@
       width: 300px;
     }
   }
+
