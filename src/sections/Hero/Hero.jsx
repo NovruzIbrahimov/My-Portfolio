@@ -6,7 +6,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/Novruz-main-frontend.pdf";
+import CV from "../../assets/NovruzFrontend.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -50,8 +50,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          I am Novruz - Frontend developer with a passion for creating beautiful and responsive websites.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>

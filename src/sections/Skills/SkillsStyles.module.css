@@ -1,68 +1,80 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #0987f2;
+
+  span {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #0987F2;
-  
-    span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-  
-    img {
-      width: 20px;
+    align-items: center;
+    gap: 5px;
+  }
+
+  img {
+    width: 14px;
+  }
+}
+
+.skillList {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  max-width: 26ch;
+}
+
+hr {
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: var(--text-color);
+  margin: 25px auto;
+}
+
+@media (min-width: 300px) and (max-width: 799px) {
+  .skillList {
+    max-width: fit-content;
+    gap: 20px;
+
+    p {
+      font-size: 7px;
+      font-weight: bold;
+      color: #0987f2;
     }
   }
-  
+
+  hr {
+    width: 150px;
+  }
+}
+
+@media (min-width: 800px) {
+  .skillList {
+    max-width: fit-content;
+    gap: 30px;
+
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0987f2;
+    }
+  }
+
+  hr {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
   .skillList {
     display: flex;
     justify-content: space-evenly;
     align-self: center;
     flex-wrap: wrap;
     row-gap: 40px;
-    max-width: 26ch;
   }
-  
   hr {
-    width: 100px;
-    height: 1px;
-    border: none;
-    background-color: var(--text-color);
-    margin: 30px auto;
+    margin: 20px auto;
   }
-
-  @media (min-width: 300px) and (max-width: 799px) {
-    .skillList {
-      max-width: fit-content;
-      gap: 20px; 
-  
-      p {
-        font-size: 12px;
-        font-weight: bold;
-        color: #0987F2;
-      }
-    }
-  
-    hr {
-      width: 150px; 
-    }
-  }
-  
-  @media (min-width: 800px) {
-    .skillList {
-      max-width: fit-content;
-      gap: 30px;
-  
-      p {
-        font-size: 20px;
-        font-weight: bold;
-        color: #0987F2;
-      }
-    }
-  
-    hr {
-      width: 300px;
-    }
-  }
-
+}

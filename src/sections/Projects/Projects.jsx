@@ -1,32 +1,49 @@
-import styles from './ProjectsStyles.module.css';
-import furniture from '../../assets/furniture2.png';
-import game from '../../assets/game4.png';
-import fashion from '../../assets/fashion4.png';
-import ProjectCard from '../../common/ProjectCard';
+import "../Projects/projects.css";
+import furniture from "../../assets/furnitureMain.png";
+import book from "../../assets/book.png";
+import game from "../../assets/shopify1.png";
+// import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   return (
-    <section id="projects" className={styles.container}>
+    <section id="projects" className="container">
       <h1 className="sectionTitle">Projects</h1>
-      <div className={styles.projectsContainer}>
-        <ProjectCard
-          src={furniture}
-          link="https://github.com/NovruzIbrahimov/Furniture_ecommerce_project.git"
-          h3="Furniture"
-          p="Furniture Ecommerce"
-        />
-        <ProjectCard
-          src={game}
-          link="https://github.com/NovruzIbrahimov/Shopify_project.git"
-          h3="Game Shopify"
-          p="Game Accessories"
-        />
-        <ProjectCard
-          src={fashion}
-          link="https://github.com/NovruzIbrahimov/Ecommerce-Project.git"
-          h3="Porto"
-          p="Fashion Shop"
-        />
+      <div className="projectsContainer">
+        <div className="projectCard">
+          <a
+            href="https://holl.az/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={furniture} alt="Furniture Ecommerce" />
+          </a>
+          <h3>Furniture</h3>
+          <p>Furniture Ecommerce</p>
+        </div>
+
+        <div className="projectCard">
+          <a
+            href="https://eazy.az/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={book} alt="Book Ecommerce" />
+          </a>
+          <h3>Book</h3>
+          <p>Book Ecommerce</p>
+        </div>
+
+        <div className="projectCard">
+          <a
+            href="https://github.com/NovruzIbrahimov/Shopify_project.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={game} alt="Game Accessories" />
+          </a>
+          <h3>Game Shopify</h3>
+          <p>Game Accessories</p>
+        </div>
       </div>
     </section>
   );
